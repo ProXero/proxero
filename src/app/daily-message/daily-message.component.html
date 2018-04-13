@@ -1,0 +1,14 @@
+<div class="upper-container">
+  <div class="datepicker-container">
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Nap" [max]="maxDate" [value]="selectedDate" (dateChange)="changeDate($event)">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <div class="container">
+    <span class="text-of-day" [innerHTML]="textOfDay"></span>
+    <span class="details" [innerHTML]="textDetails"></span>
+  </div>
+</div>

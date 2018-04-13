@@ -1,0 +1,170 @@
+[
+    {
+        "text": "Szeretlek! &#x1F497;",
+        "image": "hug.jpg",
+        "bg": "swirl.png"
+    },
+    {
+        "text": "Köszönöm, hogy vagy nekem!",
+        "image": "hug.jpg",
+        "bg": "swirl.png"
+    },
+    {
+        "text": "Köszönöm, hogy főzöl nekem!",
+        "details": "(finomakat)",
+        "image": "man-eating-spaghetti.jpg",
+        "bg": "swirl.png"
+    }, 
+    {
+        "text": "Imádom a mosolyodat",
+        "image": "grin.gif",
+        "bg": "swirl.png"
+    }, 
+    {
+        "text": "Szeretek veled lenni",
+        "image": "bg_home_couple.jpg",
+        "bg": "swirl.png"
+    }, 
+    {
+        "text": "Nem bírok betelni az öleléseiddel",
+        "image": "hug2.jpeg",
+        "bg": "swirl.png"
+    }, 
+    {
+        "text": "Legyen szép napod!",
+        "details": "Olyan szép, amilyen te is vagy &#x263A;",
+        "bg": "greyfloral.png"
+    },
+    {
+        "text": "Bármitől hajlandó vagyok megválni, kivéve tőled",
+        "image": "rom1.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Nem tudok nélküled élni",
+        "image": "rom2.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Nélküled üres vagyok",
+        "image": "rom3.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Tökéletes vagy",
+        "image": "rom4.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Miattad akarok jobb lenni",
+        "image": "rom5.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Nem vagyok Batman, de bármit megteszek, hogy megvédjelek. Szeretlek!",
+        "image": "rom6.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Az idő pénz, de a veled töltött idő megfizethetetlen.",
+        "details": "Szeretlek!",
+        "image": "rom7.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "A legjobbat hozod ki belőlem",
+        "image": "rom8.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Az élet miattad szép",
+        "details": "Szeretlek!",
+        "image": "rom9.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Te teszel teljessé",
+        "image": "rom10.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Egy angyal vagy",
+        "details": "Az én angyalom :)",
+        "image": "rom11.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Ha látsz egy hullócsillagot, kívánj valamit!",
+        "details": "Nekem működött, én téged kívántalak",
+        "image": "rom12.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Minden nap melletted akarok ébredni",
+        "image": "rom13.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Szavakkal nem lehet leírni, milyen csodálatos vagy.",
+        "details": "Szeretlek!",
+        "image": "rom14.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Imádom, ha boldog vagy. A legjobb ajándék, ha láthatom a mosolyod.",
+        "image": "rom15.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Te vagy a boldogságom",
+        "image": "rom16.jpg",
+        "bg": "bg-wall.png"
+    },
+    {
+        "text": "Te vagy a kedvenc játszótársam.",
+        "image": "rom17.jpg",
+        "bg": "bg-wall.png"
+    },
+
+    {
+        "text": "Köszönöm az ajándékokat!",
+        "image": "xmas2.jpg",
+        "date": "2017-12-25",
+        "bg": "christmas-bg.png"
+    },
+    {
+        "text": "Remélem, hogy még sok karácsonyt töltünk együtt!",
+        "image": "xmas3.jpg",
+        "date": "2017-12-26",
+        "bg": "christmas-bg.png"
+    },
+    {
+        "text": "Boldog karácsonyt!",
+        "details": "Állítsd be azt az oldalt a kezdőlapodnak, és használd minden nap! &#x1F609;",
+        "date": "2017-12-24",
+        "image": "xmas.jpg",
+        "bg": "christmas-bg.png"
+    },
+    {
+        "text": "Ez az év veled indul a legjobban!",
+        "image": "newyear.jpg",
+        "date": "2018-01-01",
+        "bg": "swirl.png"
+    },
+    {
+        "text": "Boldog születésnapot kívánok!",
+        "image": "birthday.gif",
+        "date": "2018-01-18",
+        "bg": "swirl.png"
+    },
+    {
+        "text": "Köszönöm életem eddigi legszebb fél évét!",
+        "date": "2018-01-07",
+        "image": "i-heart-you.jpg"
+    },
+    {
+        "text": "Veled minden évszak csodálatos!",
+        "date": "2018-04-07",
+        "image": "4season.jpg"
+    }
+]

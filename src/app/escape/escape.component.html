@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-content>
+    <mat-tab-group>
+      <mat-tab label="Leírás">
+        <div class="tab-container">
+          <h1>Some tab content</h1>
+          <p>...</p>
+        </div>
+      </mat-tab>
+      <mat-tab label="Játék">
+        <div class="tab-container">
+            <mat-horizontal-stepper linear>
+                <mat-step label="Step 1" [completed]="step1Complete">
+                  Content 1
+                  <button mat-button (click)="ready()" matStepperNext>
+                    complete
+                  </button>
+                </mat-step>
+                <mat-step label="Step 2">
+                  Content 2
+                </mat-step>
+            </mat-horizontal-stepper>
+          </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>
