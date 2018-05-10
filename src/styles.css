@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
 
+@font-face {
+    font-family: 'wedding';
+    src: url('/assets/wedding-webfont.woff2')  format('woff');
+}
+
 .search-div{
     align-self: center;
     display: flex;
