@@ -1,22 +1,4 @@
-.text-of-day{
-    font-size: 24px;
-}
 
-.container{
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid lightblue;
-    background-color: white;
-}
-
-.datepicker-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .pic{
     position: fixed;

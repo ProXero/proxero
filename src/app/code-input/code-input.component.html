@@ -1,0 +1,14 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <div class="space"></div>
+    <mat-form-field>
+      <input matInput name="code" placeholder="kód" ngModel />
+    </mat-form-field>
+
+    <button mat-button type="submit" color="primary">
+      OK
+    </button>
+
+    <mat-error *ngIf="wrongCode && codeInput">
+      Rossz kód
+    </mat-error>
+  </form>

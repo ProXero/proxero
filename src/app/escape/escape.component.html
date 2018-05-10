@@ -1,26 +1,119 @@
 <mat-card>
   <mat-card-content>
-    <mat-tab-group>
+    <mat-tab-group [(selectedIndex)]="tabSelectedIndex">
       <mat-tab label="Leírás">
-        <div class="tab-container">
-          <h1>Some tab content</h1>
-          <p>...</p>
-        </div>
+        <mat-card class="description">
+          <mat-card-content>
+            <p>Sok év eltelt az első találkozásunk óta. Ezalatt rengeteg közös emlékkel gazdagodtunk. Minden napra jutott boldog
+              pillanat.
+            </p>
+            <p>Sajnos egy betegségnek köszönhetően a memóriám folyamatosan romlik. Egyre kevesebbszer ismerlek meg. Szerencsére
+              sokszor sikerül visszahoznod a közös emlékeink felidézésével, és ma is ez lesz a feladatod.
+            </p>
+            <p>
+              Készíts elő egy gyertyafényes "vacsorát", mialatt felidézzük az első együtt töltött évünket!
+            </p>
+            <p class="signature">Csabi</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button (click)="startGame()" color="primary">Indulhat a játék</button>
+          </mat-card-actions>
+        </mat-card>
       </mat-tab>
       <mat-tab label="Játék">
         <div class="tab-container">
-            <mat-horizontal-stepper linear>
-                <mat-step label="Step 1" [completed]="step1Complete">
-                  Content 1
-                  <button mat-button (click)="ready()" matStepperNext>
-                    complete
-                  </button>
-                </mat-step>
-                <mat-step label="Step 2">
-                  Content 2
-                </mat-step>
-            </mat-horizontal-stepper>
-          </div>
+          <mat-horizontal-stepper #stepper linear>
+            <mat-step label="Távol" [completed]="step0Complete">
+              <p>Juss ki a szobából!</p>
+              <img src="/assets/cities.png" />
+              <p></p>
+              <!-- kis doboz: háló kulcs, led kapcsoló -->
+              <button mat-button color="primary" (click)="code0Found()">
+                Kint vagyok
+              </button>
+
+              <button *ngIf="step0Complete" mat-button matStepperNext color="primary">
+                Következő &gt;
+              </button>
+
+            </mat-step>
+            <mat-step label="Grund" *ngIf="step0Complete" [completed]="step1Complete">
+              <p>
+                A vacsorához szükség lesz egy olyan borra, amit először fogyasztottunk együtt az első találkozásunkkor.
+              </p>
+              <!-- 88 konyha ajtón -->
+              <div class="flex">
+                <div class="green block"></div>
+                <div class="blue block"></div>
+              </div>
+              <code-input code="1349" (codeFound)="code1Found()"></code-input>
+
+              <button *ngIf="step1Complete" mat-button matStepperNext color="primary">
+                Következő &gt;
+              </button>
+            </mat-step>
+            <mat-step label="Otthon" *ngIf="step1Complete" [completed]="step2Complete">
+              <p>2. randinkon én egy hosszú utazáson voltam túl, és te átjöttél társasozni :)</p>
+              <div class="flex border">
+                <div class="green block"></div>
+                <div class="red block"></div>
+                <div class="orange block"></div>
+                <div class="white block"></div>
+              </div>
+              <!-- clank: konyha kulcs, gumimaci kód -->
+              <code-input code="5624" (codeFound)="code2Found()"></code-input>
+
+              <button *ngIf="step2Complete" mat-button matStepperNext color="primary">
+                Következő &gt;
+              </button>
+
+            </mat-step>
+            <mat-step label="Eger" *ngIf="step2Complete" [completed]="step3Complete">
+              <p>
+                Első nyaralásunk Egerbe vitt minket, ahol egy táskányi cuccnál többre nem is volt szükségünk.
+              </p>
+
+              <!-- nagy táska: borhűtő, 1. sherlock kép, kártya pakli -->
+
+              <code-input code="4352" (codeFound)="code3Found()"></code-input>
+
+              <button *ngIf="step3Complete" mat-button matStepperNext color="primary">
+                Következő &gt;
+              </button>
+            </mat-step>
+            <mat-step label="Karácsony" *ngIf="step3Complete" [completed]="step4Complete">
+              <p>Karácsonykor kaptál egy soha véget nem érő ajándékot</p>
+
+              <code-input code="9876" (codeFound)="code4Found()"></code-input>
+
+              <button *ngIf="step4Complete" mat-button matStepperNext color="primary">
+                Következő &gt;
+              </button>
+            </mat-step>
+            <mat-step label="Erkély" *ngIf="step4Complete" [completed]="step5Complete">
+              <p>Tavasszal felújítottuk az erkélyt</p>
+              <code-input code="3648" (codeFound)="code5Found()"></code-input>
+              <a href="end" *ngIf="step5Complete" mat-button color="primary">
+                Következő &gt;
+              </a>
+              <!--erkély: 7x6/1  hors
+                  
+                1463 
+                nagy láda: másik láda, dugóhúzó, projector puzzle -->
+
+
+              <!-- 3648 -->
+              <div class="pContainer">
+                <div class="pointsContainer">
+                  <div class="paper-block" *ngFor="let points of pointsCollection">
+                    <div class="white-block" style.left="{{(point.x-1)*4.28+54}}px" style.top="{{(point.y-1)*3.9+15}}px" *ngFor="let point of points">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </mat-step>
+          </mat-horizontal-stepper>
+        </div>
       </mat-tab>
     </mat-tab-group>
   </mat-card-content>

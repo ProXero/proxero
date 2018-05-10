@@ -10,9 +10,13 @@ import { AppComponent } from './app.component';
 import { EscapeComponent } from './escape/escape.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DailyMessageComponent } from './daily-message/daily-message.component';
+import { EndComponent } from './end/end.component';
+import { FormsModule }   from '@angular/forms';
+import { CodeInputComponent } from './code-input/code-input.component';
 
 const appRoutes: Routes = [
   { path: 'escape', component: EscapeComponent },
+  { path: 'end', component: EndComponent },
   { path: '**', component: DailyMessageComponent }
 ];
 
@@ -20,7 +24,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     EscapeComponent,
-    DailyMessageComponent
+    DailyMessageComponent,
+    EndComponent,
+    CodeInputComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -36,7 +42,8 @@ const appRoutes: Routes = [
     MatCardModule,
     MatStepperModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [
     HttpClientModule,
