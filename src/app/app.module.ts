@@ -13,11 +13,16 @@ import { DailyMessageComponent } from './daily-message/daily-message.component';
 import { EndComponent } from './end/end.component';
 import { FormsModule }   from '@angular/forms';
 import { CodeInputComponent } from './code-input/code-input.component';
+import { MainComponent } from './main/main.component';
+import { EskuvoComponent } from './eskuvo/eskuvo.component';
+import { CountdownComponent } from './countdown/countdown.component';
 
 const appRoutes: Routes = [
   { path: 'escape', component: EscapeComponent },
   { path: 'end', component: EndComponent },
-  { path: '**', component: DailyMessageComponent }
+  { path: 'Start', component: DailyMessageComponent },
+  { path: 'eskuvo', component: EskuvoComponent },
+  { path: '**', component: MainComponent }
 ];
 
 @NgModule({
@@ -26,7 +31,10 @@ const appRoutes: Routes = [
     EscapeComponent,
     DailyMessageComponent,
     EndComponent,
-    CodeInputComponent
+    CodeInputComponent,
+    MainComponent,
+    EskuvoComponent,
+    CountdownComponent
   ],
   imports: [
     RouterModule.forRoot(
