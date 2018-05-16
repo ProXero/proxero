@@ -1,4 +1,4 @@
-export class Record{
+export class Record {
     text: string;
     details: string;
     date: Date;

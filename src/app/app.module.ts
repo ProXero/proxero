@@ -11,7 +11,7 @@ import { EscapeComponent } from './escape/escape.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DailyMessageComponent } from './daily-message/daily-message.component';
 import { EndComponent } from './end/end.component';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { CodeInputComponent } from './code-input/code-input.component';
 import { MainComponent } from './main/main.component';
 import { EskuvoComponent } from './eskuvo/eskuvo.component';
@@ -63,6 +63,6 @@ const appRoutes: Routes = [
     NO_ERRORS_SCHEMA
   ]
 })
-export class AppModule { 
-  
+export class AppModule {
+
 }
