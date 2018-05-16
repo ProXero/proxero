@@ -3,7 +3,7 @@ import { Record } from './model';
 import { DataReceiverService } from './data-receiver.service';
 import { Promise } from 'q';
 
-import * as moment from 'moment/src/moment';
+import * as moment from 'moment';
 
 @Injectable()
 export class RecordSelectorService {
